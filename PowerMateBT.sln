@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{545AAD0A-346A-484E-B049-B5F1AA696C08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerMateBT", "src\PowerMateBT\PowerMateBT.csproj", "{D0474295-3D80-495E-8A0A-2B6E44B19489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerMateBT.Diag", "src\PowerMateBT.Diag\PowerMateBT.Diag.csproj", "{F6A0DC7C-0DB4-4F66-A0B9-7B770220C693}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0474295-3D80-495E-8A0A-2B6E44B19489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0474295-3D80-495E-8A0A-2B6E44B19489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0474295-3D80-495E-8A0A-2B6E44B19489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0474295-3D80-495E-8A0A-2B6E44B19489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A0DC7C-0DB4-4F66-A0B9-7B770220C693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A0DC7C-0DB4-4F66-A0B9-7B770220C693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A0DC7C-0DB4-4F66-A0B9-7B770220C693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A0DC7C-0DB4-4F66-A0B9-7B770220C693}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0474295-3D80-495E-8A0A-2B6E44B19489} = {545AAD0A-346A-484E-B049-B5F1AA696C08}
+		{F6A0DC7C-0DB4-4F66-A0B9-7B770220C693} = {545AAD0A-346A-484E-B049-B5F1AA696C08}
+	EndGlobalSection
+EndGlobal
