@@ -28,18 +28,29 @@ so there's no driver to install and no admin rights needed.
 
 ## Getting started
 
+You need Windows 10 (build 19041) or later, with Bluetooth LE.
+
 1. **Pair the knob:** Settings → Bluetooth & devices → Add device → Bluetooth, then select
    **PowerMate Bluetooth**. If Windows asks for a PIN, try `0000`.
-2. **Build it.** You need Windows 10 (build 19041) or later with Bluetooth LE, and the
-   [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
-   ```
-   dotnet publish src/PowerMateBT -c Release -r win-x64 --self-contained false -o publish
-   ```
-3. **Run** `publish\PowerMateBT.exe`. Turn the knob to wake it, and the tray icon gets a red dot
-   when it's connected.
+2. **Download** `PowerMateBT.exe` from the
+   [latest release](https://github.com/Sijmen42/PowerMateBT/releases/latest). It's a single file
+   with everything included, so you don't need to install .NET. Put it somewhere permanent, such
+   as `%LOCALAPPDATA%\PowerMateBT\app`.
+3. **Run it.** Windows SmartScreen may warn you the first time, because the exe isn't
+   code-signed. Click **More info → Run anyway**. Turn the knob to wake it, and the tray icon gets a
+   red dot when it's connected.
 4. Right-click the tray icon and tick **Start with Windows** if you want it to start automatically.
 
-To run it straight from source while developing, use `dotnet run --project src/PowerMateBT`.
+### Building from source
+
+Install the [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0), then:
+
+```
+dotnet publish src/PowerMateBT -c Release -o publish
+```
+
+This produces the same single `publish\PowerMateBT.exe`. While developing, use
+`dotnet run --project src/PowerMateBT`.
 
 ## How it works
 
